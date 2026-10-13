@@ -28,3 +28,4 @@ D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\4. Frameworks And Drivers
 D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\4. Frameworks And Drivers\Libraries\NorthWind.UserServices\obj\Debug\net10.0\refint\NorthWind.UserServices.dll
 D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\4. Frameworks And Drivers\Libraries\NorthWind.UserServices\obj\Debug\net10.0\NorthWind.UserServices.pdb
 D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\4. Frameworks And Drivers\Libraries\NorthWind.UserServices\obj\Debug\net10.0\ref\NorthWind.UserServices.dll
+D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\4. Frameworks And Drivers\Libraries\NorthWind.UserServices\obj\Debug\net10.0\NorthWind.UserServices.sourcelink.json

@@ -56,3 +56,4 @@ D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\3. Interface Adapters\Pre
 D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\3. Interface Adapters\Presenters\NorthWind.Sales.Backend.Presenters\obj\Debug\net10.0\refint\NorthWind.Sales.Backend.Presenters.dll
 D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\3. Interface Adapters\Presenters\NorthWind.Sales.Backend.Presenters\obj\Debug\net10.0\NorthWind.Sales.Backend.Presenters.pdb
 D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\3. Interface Adapters\Presenters\NorthWind.Sales.Backend.Presenters\obj\Debug\net10.0\ref\NorthWind.Sales.Backend.Presenters.dll
+D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\3. Interface Adapters\Presenters\NorthWind.Sales.Backend.Presenters\obj\Debug\net10.0\NorthWind.Sales.Backend.Presenters.sourcelink.json

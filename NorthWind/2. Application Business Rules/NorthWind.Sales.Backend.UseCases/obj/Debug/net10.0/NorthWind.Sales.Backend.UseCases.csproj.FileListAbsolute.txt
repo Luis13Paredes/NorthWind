@@ -60,3 +60,4 @@ D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\2. Application Business R
 D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\2. Application Business Rules\NorthWind.Sales.Backend.UseCases\obj\Debug\net10.0\refint\NorthWind.Sales.Backend.UseCases.dll
 D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\2. Application Business Rules\NorthWind.Sales.Backend.UseCases\obj\Debug\net10.0\NorthWind.Sales.Backend.UseCases.pdb
 D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\2. Application Business Rules\NorthWind.Sales.Backend.UseCases\obj\Debug\net10.0\ref\NorthWind.Sales.Backend.UseCases.dll
+D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\2. Application Business Rules\NorthWind.Sales.Backend.UseCases\obj\Debug\net10.0\NorthWind.Sales.Backend.UseCases.sourcelink.json

@@ -28,3 +28,4 @@ D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\4. Frameworks And Drivers
 D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\4. Frameworks And Drivers\Libraries\NorthWind.ValidationService.FluentValidation\obj\Debug\net10.0\refint\NorthWind.ValidationService.FluentValidation.dll
 D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\4. Frameworks And Drivers\Libraries\NorthWind.ValidationService.FluentValidation\obj\Debug\net10.0\NorthWind.ValidationService.FluentValidation.pdb
 D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\4. Frameworks And Drivers\Libraries\NorthWind.ValidationService.FluentValidation\obj\Debug\net10.0\ref\NorthWind.ValidationService.FluentValidation.dll
+D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\4. Frameworks And Drivers\Libraries\NorthWind.ValidationService.FluentValidation\obj\Debug\net10.0\NorthWind.ValidationService.FluentValidation.sourcelink.json

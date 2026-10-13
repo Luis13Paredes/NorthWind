@@ -64,3 +64,4 @@ D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\4. Frameworks And Drivers
 D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\4. Frameworks And Drivers\Frameworks\DataContexts\NorthWind.Sales.Backend.DataContexts.EFCore\obj\Debug\net10.0\NorthWind.Sales.Backend.DataContexts.EFCore.pdb
 D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\4. Frameworks And Drivers\Frameworks\DataContexts\NorthWind.Sales.Backend.DataContexts.EFCore\obj\Debug\net10.0\NorthWind.Sales.Backend.DataContexts.EFCore.genruntimeconfig.cache
 D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\4. Frameworks And Drivers\Frameworks\DataContexts\NorthWind.Sales.Backend.DataContexts.EFCore\obj\Debug\net10.0\ref\NorthWind.Sales.Backend.DataContexts.EFCore.dll
+D:\ESTUDIANTES_PRACTICA\ESTUDIANTES_PRACTICA\NorthWind\4. Frameworks And Drivers\Frameworks\DataContexts\NorthWind.Sales.Backend.DataContexts.EFCore\obj\Debug\net10.0\NorthWind.Sales.Backend.DataContexts.EFCore.sourcelink.json
