@@ -1,0 +1,40 @@
+<div class="nw-auth-wrap">
+    <div class="nw-auth-card">
+        <div class="nw-auth-title">@UserLoginMessages.LoginButtonText</div>
+        <div class="nw-auth-subtitle">Bienvenido de nuevo, ingresa tus datos para continuar.</div>
+        <EditForm Model="ViewModel" OnValidSubmit="ViewModel.Login">
+            <ModelValidator Validator="ViewModel.Validator"
+                @ref=ViewModel.ModelValidatorComponentReference />
+            <ValidationSummary />
+
+            <div class="form-group">
+                <label for="Email">
+                    @CommonMessages.EmailLabel
+                </label>
+                <InputText id="Email"
+                    class="form-control"
+                    placeholder="@CommonMessages.EmailLabel"
+                    @bind-Value=ViewModel.Email />
+                <ValidationMessage For="@(() => ViewModel.Email)" />
+            </div>
+
+            <div class="form-group">
+                <label for="Password">
+                    @CommonMessages.PasswordLabel
+                </label>
+                <InputText id="Password"
+                    class="form-control"
+                    placeholder="@CommonMessages.PasswordLabel"
+                    type="password"
+                    @bind-Value=ViewModel.Password />
+                <ValidationMessage For="@(() => ViewModel.Password)" />
+            </div>
+
+            <div class="nw-actions">
+                <button class="btn btn-primary w-100">
+                    @UserLoginMessages.LoginButtonText
+                </button>
+            </div>
+        </EditForm>
+    </div>
+</div>

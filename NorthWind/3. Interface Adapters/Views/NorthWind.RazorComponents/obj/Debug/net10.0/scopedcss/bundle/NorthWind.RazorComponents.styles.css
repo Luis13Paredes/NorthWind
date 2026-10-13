@@ -1,0 +1,119 @@
+/* _content/NorthWind.RazorComponents/Exceptions/ExceptionDisplay.razor.rz.scp.css */
+.main[b-4pndjzk48q] {
+    overflow-wrap:anywhere;
+}
+/* _content/NorthWind.RazorComponents/Layouts/NavMenuLayout.razor.rz.scp.css */
+.page[b-yze00l5xte] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-yze00l5xte] {
+    flex: 1;
+    min-width: 0;
+}
+
+.content[b-yze00l5xte] {
+    padding-top: 1.5rem;
+}
+
+.sidebar[b-yze00l5xte] {
+    background-image: linear-gradient(180deg, #312e81 0%, #4f46e5 60%, #0d9488 140%);
+    box-shadow: 2px 0 16px rgba(49, 46, 129, 0.35);
+}
+
+.top-row[b-yze00l5xte] {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #e2e8f0;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.92rem;
+}
+
+    .top-row[b-yze00l5xte]  a, .top-row[b-yze00l5xte]  .btn-link {
+        white-space: nowrap;
+        margin-left: 1rem;
+        text-decoration: none;
+        font-weight: 600;
+        color: #4f46e5;
+        padding: 0.35rem 0.8rem;
+        border-radius: 8px;
+    }
+
+        .top-row[b-yze00l5xte]  a:hover, .top-row[b-yze00l5xte]  .btn-link:hover {
+            text-decoration: none;
+            background-color: #eef2ff;
+        }
+
+        .top-row[b-yze00l5xte]  a:first-child {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+@media (min-width: 641px) {
+    .page[b-yze00l5xte] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-yze00l5xte] {
+        width: 258px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+}
+/* _content/NorthWind.RazorComponents/NavBars/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-zij4r21d70] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-zij4r21d70] {
+        display: none;
+    }
+
+    .collapse[b-zij4r21d70] {
+        display: block;
+    }
+
+    .nav-scrollable[b-zij4r21d70] {
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
+}
+/* _content/NorthWind.RazorComponents/NavBars/NavMenuItem.razor.rz.scp.css */
+.nav-item[b-gz4gyelbdq] {
+    font-size: 0.93rem;
+    font-family: 'Plus Jakarta Sans', 'Nunito', 'Segoe UI', sans-serif;
+    font-weight: 600;
+    padding-top: 0.35rem;
+}
+
+    .nav-item[b-gz4gyelbdq]  a {
+        color: #e0e7ff;
+        border-radius: 10px;
+        height: 2.8rem;
+        display: flex;
+        align-items: center;
+        line-height: 1.4;
+        transition: background-color 0.2s ease, color 0.2s ease;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+    }
+
+.nav-item[b-gz4gyelbdq]  a.active {
+    background-color: rgba(255,255,255,0.92);
+    color: #312e81;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+    font-weight: 700;
+}
+
+.nav-item[b-gz4gyelbdq]  a:hover {
+    background-color: rgba(255,255,255,0.18);
+    color: white;
+}

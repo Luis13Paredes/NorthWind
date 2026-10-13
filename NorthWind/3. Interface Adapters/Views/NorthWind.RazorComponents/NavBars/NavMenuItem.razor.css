@@ -1,0 +1,30 @@
+.nav-item {
+    font-size: 0.93rem;
+    font-family: 'Plus Jakarta Sans', 'Nunito', 'Segoe UI', sans-serif;
+    font-weight: 600;
+    padding-top: 0.35rem;
+}
+
+    .nav-item ::deep a {
+        color: #e0e7ff;
+        border-radius: 10px;
+        height: 2.8rem;
+        display: flex;
+        align-items: center;
+        line-height: 1.4;
+        transition: background-color 0.2s ease, color 0.2s ease;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+    }
+
+.nav-item ::deep a.active {
+    background-color: rgba(255,255,255,0.92);
+    color: #312e81;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+    font-weight: 700;
+}
+
+.nav-item ::deep a:hover {
+    background-color: rgba(255,255,255,0.18);
+    color: white;
+}
