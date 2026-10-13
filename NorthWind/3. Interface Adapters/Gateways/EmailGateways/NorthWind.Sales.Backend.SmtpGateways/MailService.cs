@@ -1,22 +1,27 @@
 namespace NorthWind.Sales.Backend.SmtpGateways;
 
 internal class MailService(IOptions<SmtpOptions> smtpOptions,
-    ILogger<MailService> logger) : IMailService
+    ILogger<MailService> logger) :
+    NorthWind.Sales.Backend.BusinessObjects.Interfaces.IMailService,
+    NorthWind.Entities.Interfaces.IMailService
 {
-    public async Task SendMailToAdministrator(
+    public async Task SendMailToAdministratorAsync(
         string subject, string body)
     {
         try
         {
-            MailMessage Message =
+            int Port = smtpOptions.Value.SmtpPort is 0
+                ? smtpOptions.Value.SmtpHostPort
+                : smtpOptions.Value.SmtpPort;
+
+            using MailMessage Message =
                 new MailMessage(smtpOptions.Value.SenderEmail,
                     smtpOptions.Value.AdministratorEmail);
             Message.Subject = subject;
             Message.Body = body;
 
-            SmtpClient Client = new SmtpClient(
-                smtpOptions.Value.SmtpHost,
-                smtpOptions.Value.SmtpHostPort)
+            using SmtpClient Client = new SmtpClient(
+                smtpOptions.Value.SmtpHost, Port)
             {
                 Credentials = new NetworkCredential(
                     smtpOptions.Value.SmtpUserName,
@@ -32,4 +37,8 @@ internal class MailService(IOptions<SmtpOptions> smtpOptions,
             throw;
         }
     }
+
+    Task NorthWind.Entities.Interfaces.IMailService.SendMailToAdministrator(
+        string subject, string body) =>
+        SendMailToAdministratorAsync(subject, body);
 }

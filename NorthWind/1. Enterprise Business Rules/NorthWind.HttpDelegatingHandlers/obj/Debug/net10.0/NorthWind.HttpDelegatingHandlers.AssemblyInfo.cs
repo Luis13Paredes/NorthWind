@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NorthWind.HttpDelegatingHandlers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b74424496b326e40ed0931e819a5ac26cfb6a63")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02082dbe9ad9612b2b773866241b6d8cbac02d74")]
 [assembly: System.Reflection.AssemblyProductAttribute("NorthWind.HttpDelegatingHandlers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NorthWind.HttpDelegatingHandlers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -6,7 +6,11 @@ public static class DependencyContainer
         this IServiceCollection services,
         Action<SmtpOptions> configureSmtpOptions)
     {
-        services.AddSingleton<IMailService, MailService>();
+        services.AddSingleton<MailService>();
+        services.AddSingleton<NorthWind.Entities.Interfaces.IMailService>(
+            sp => sp.GetRequiredService<MailService>());
+        services.AddSingleton<NorthWind.Sales.Backend.BusinessObjects.Interfaces.IMailService>(
+            sp => sp.GetRequiredService<MailService>());
         services.Configure(configureSmtpOptions);
         return services;
     }
