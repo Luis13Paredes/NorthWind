@@ -1,114 +1,104 @@
-<div class="nw-page-header">
-    <h1>@CreateOrderMessages.CreateOrderPageTitle</h1>
-    <p>Completa los datos del cliente y agrega los productos de la orden.</p>
-</div>
-
 <EditForm Model=Order OnValidSubmit="Order.Send">
     <ModelValidator Validator="Order.Validator"
         @ref=Order.ModelValidatorComponentReference/>
-
-    <div class="nw-card">
-        <div class="nw-card-title">@CreateOrderMessages.CustomerIdLabel — cliente y envío</div>
-        <div class="nw-form-grid">
-            <div class="form-group">
-                <label for="customerId">
-                    @CreateOrderMessages.CustomerIdLabel
-                </label>
-                <InputText
-                    class="form-control" id="customerId"
-                    placeholder="@CreateOrderMessages.CustomerIdLabel"
-                    @bind-Value=Order.CustomerId/>
-                <ValidationMessage For="() => Order.CustomerId"/>
-            </div>
-            <div class="form-group">
-                <label for="shipPostalCode">
-                    @CreateOrderMessages.ShipPostalCodeLabel
-                </label>
-                <InputText
-                    class="form-control" id="shipPostalCode"
-                    placeholder="@CreateOrderMessages.ShipPostalCodeLabel"
-                    @bind-Value=Order.ShipPostalCode />
-                <ValidationMessage For="() => Order.ShipPostalCode"/>
-            </div>
-            <div class="form-group span-2">
-                <label for="shipAddress">
-                    @CreateOrderMessages.ShipAddressLabel
-                </label>
-                <InputText
-                    class="form-control" id="shipAddress"
-                    placeholder="@CreateOrderMessages.ShipAddressLabel"
-                    @bind-Value=Order.ShipAddress />
-                <ValidationMessage For="() => Order.ShipAddress"/>
-            </div>
-            <div class="form-group">
-                <label for="shipCity">
-                    @CreateOrderMessages.ShipCityLabel
-                </label>
-                <InputText
-                    class="form-control" id="shipCity"
-                    placeholder="@CreateOrderMessages.ShipCityLabel"
-                    @bind-Value=Order.ShipCity />
-                <ValidationMessage For="() => Order.ShipCity"/>
-            </div>
-            <div class="form-group">
-                <label for="shipCountry">
-                    @CreateOrderMessages.ShipCountryLabel
-                </label>
-                <InputText
-                    class="form-control" id="shipCountry"
-                    placeholder="@CreateOrderMessages.ShipCountryLabel"
-                    @bind-Value=Order.ShipCountry />
-                <ValidationMessage For="() => Order.ShipCountry"/>
-            </div>
+    <div class="form-group">
+        <label for="customerId">
+            @CreateOrderMessages.CustomerIdLabel
+        </label>
+        <InputText
+            class="form-control" id="customerId"
+            placeholder="@CreateOrderMessages.CustomerIdLabel"
+            @bind-Value=Order.CustomerId/>
+        <ValidationMessage For="() => Order.CustomerId"/>
+    </div>
+    <div class="form-group">
+        <label for="shipAddress">
+            @CreateOrderMessages.ShipAddressLabel
+        </label>
+        <InputText
+            class="form-control" id="shipAddress"
+            placeholder="@CreateOrderMessages.ShipAddressLabel"
+            @bind-Value=Order.ShipAddress />
+        <ValidationMessage For="() => Order.ShipAddress"/>
+    </div>
+    <div class="form-group">
+        <label for="shipCity">
+            @CreateOrderMessages.ShipCityLabel
+        </label>
+        <InputText
+            class="form-control" id="shipCity"
+            placeholder="@CreateOrderMessages.ShipCityLabel"
+            @bind-Value=Order.ShipCity />
+        <ValidationMessage For="() => Order.ShipCity"/>
+    </div>
+    <div class="form-group">
+        <label for="shipCountry">
+            @CreateOrderMessages.ShipCountryLabel
+        </label>
+        <InputText
+            class="form-control" id="shipCountry"
+            placeholder="@CreateOrderMessages.ShipCountryLabel"
+            @bind-Value=Order.ShipCountry />
+        <ValidationMessage For="() => Order.ShipCountry"/>
+    </div>
+    <div class="form-group">
+        <label for="shipPostalCode">
+            @CreateOrderMessages.ShipPostalCodeLabel
+        </label>
+        <InputText
+            class="form-control" id="shipPostalCode"
+            placeholder="@CreateOrderMessages.ShipPostalCodeLabel"
+            @bind-Value=Order.ShipPostalCode />
+        <ValidationMessage For="() => Order.ShipPostalCode"/>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col">
+            @CreateOrderMessages.ProductIdLabel
+        </div>
+        <div class="col">
+            @CreateOrderMessages.UnitPriceLabel
+        </div>
+        <div class="col">
+            @CreateOrderMessages.QuantityLabel
         </div>
     </div>
 
-    <div class="nw-card">
-        <div class="nw-card-title">@CreateOrderMessages.ProductIdLabel · @CreateOrderMessages.QuantityLabel</div>
-        <div class="row nw-detail-head">
+    @foreach (var Item in Order.OrderDetails)
+    {
+        <div class="row">
             <div class="col">
-                @CreateOrderMessages.ProductIdLabel
+                <InputNumber
+                    class="form-control"
+                    placeholder="@CreateOrderMessages.ProductIdLabel"
+                    @bind-Value="Item.ProductId" />
+                <ValidationMessage For="() => Item.ProductId"/>
             </div>
             <div class="col">
-                @CreateOrderMessages.UnitPriceLabel
+                <InputNumber
+                    class="form-control"
+                    placeholder="@CreateOrderMessages.UnitPriceLabel"
+                    @bind-Value="Item.UnitPrice" />
+                <ValidationMessage For="() => Item.UnitPrice"/>
             </div>
             <div class="col">
-                @CreateOrderMessages.QuantityLabel
+                <InputNumber
+                    class="form-control"
+                    placeholder="@CreateOrderMessages.QuantityLabel"
+                    @bind-Value="Item.Quantity" />
+                <ValidationMessage For="() => Item.Quantity"/>
             </div>
         </div>
+    }
 
-        @foreach (var Item in Order.OrderDetails)
-        {
-            <div class="row g-2 nw-detail-row">
-                <div class="col">
-                    <InputNumber
-                        class="form-control"
-                        placeholder="@CreateOrderMessages.ProductIdLabel"
-                        @bind-Value="Item.ProductId" />
-                    <ValidationMessage For="() => Item.ProductId"/>
-                </div>
-                <div class="col">
-                    <InputNumber
-                        class="form-control"
-                        placeholder="@CreateOrderMessages.UnitPriceLabel"
-                        @bind-Value="Item.UnitPrice" />
-                    <ValidationMessage For="() => Item.UnitPrice"/>
-                </div>
-                <div class="col">
-                    <InputNumber
-                        class="form-control"
-                        placeholder="@CreateOrderMessages.QuantityLabel"
-                        @bind-Value="Item.Quantity" />
-                    <ValidationMessage For="() => Item.Quantity"/>
-                </div>
-            </div>
-        }
-
-        <div class="nw-actions">
-            <button type="button" class="btn btn-outline-secondary"
+    <div class="row p-3">
+        <div class="col">
+            <button type="button" class="btn btn-primary"
                     @onclick=Order.AddNewOrderDetailItem>
-                + @CreateOrderMessages.AddProductButtonText
+                @CreateOrderMessages.AddProductButtonText
             </button>
+        </div>
+        <div class="col">
             <button class="btn btn-primary">
                 @CreateOrderMessages.SendButtonText
             </button>
@@ -116,6 +106,7 @@
     </div>
 </EditForm>
 
+<hr />
 @if (!string.IsNullOrWhiteSpace(Order.InformationMessage))
 {
     <div class="alert alert-info">
