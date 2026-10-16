@@ -5,7 +5,7 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
   "mainAssemblyName": "NorthWind.Sales.BlazorClient",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-w2VdtGnCX1Tgesp66FmEjvx9kOnPaVdmLYTyR3oOG9Y=",
+    "hash": "sha256-fPt9OoWeMB5XCZgBGQ466eClT1dot6YVFt9mW1Nwc9k=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.b6l13xorvf.js"
@@ -1296,8 +1296,8 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "NorthWind.RazorComponents.wasm",
-        "name": "NorthWind.RazorComponents.7blkam6t84.wasm",
-        "hash": "sha256-46oInLdaWURI4CVaRc+KXuBSgcVi8XftfwZknXwTgu4=",
+        "name": "NorthWind.RazorComponents.7dciq67t0u.wasm",
+        "hash": "sha256-G/GFYBpj4r9aQIQAv2pk91NYv9GQDN4ouwLNX9eIR4A=",
         "cache": "force-cache"
       },
       {
@@ -1314,14 +1314,14 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "NorthWind.Sales.Frontend.IoC.wasm",
-        "name": "NorthWind.Sales.Frontend.IoC.tltppa6dyv.wasm",
-        "hash": "sha256-ISNfPt/M4oIvgK97ynpXlAXlf/a9y/1zra7chlDsdUI=",
+        "name": "NorthWind.Sales.Frontend.IoC.jmklqv75a4.wasm",
+        "hash": "sha256-Vb7BXr3Kr3G+OrATxZqUG1yO9LBmNQ45cNYZhG76450=",
         "cache": "force-cache"
       },
       {
         "virtualPath": "NorthWind.Sales.Frontend.Views.wasm",
-        "name": "NorthWind.Sales.Frontend.Views.l5osu8wdy0.wasm",
-        "hash": "sha256-t1gYTqCV7beK1rSMc9sv3bbaIHwbOtgGm1p/wasVuxc=",
+        "name": "NorthWind.Sales.Frontend.Views.0izlrfsb1z.wasm",
+        "hash": "sha256-CEINI9YXW6Se6sSNNuvK1iyIvPIqPhAz9oZxbgchK/8=",
         "cache": "force-cache"
       },
       {
@@ -1356,16 +1356,16 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "NorthWind.Sales.BlazorClient.wasm",
-        "name": "NorthWind.Sales.BlazorClient.y1jx3li5pd.wasm",
-        "hash": "sha256-tpWHj+WUA5lrrCuA7tY5J/Vt4JyWTWjO8Gtpe52fXII=",
+        "name": "NorthWind.Sales.BlazorClient.h2gz7gwou4.wasm",
+        "hash": "sha256-5xzTGMS21bKDYGGc7+zOzF0O952li+56Jd4vLPb6rhc=",
         "cache": "force-cache"
       }
     ],
     "pdb": [
       {
         "virtualPath": "NorthWind.Sales.Frontend.IoC.pdb",
-        "name": "NorthWind.Sales.Frontend.IoC.evx46m1l1u.pdb",
-        "hash": "sha256-hk1FYJLzrZqtSX0gpAyGckiJOkLFTmnnRf5JT9S91SM=",
+        "name": "NorthWind.Sales.Frontend.IoC.54y8risqny.pdb",
+        "hash": "sha256-tSEhHAf2DVtgb86JQ37KiF0gFvwWBO7v6X+Kb0dcCOc=",
         "cache": "force-cache"
       },
       {
@@ -1376,8 +1376,8 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "NorthWind.RazorComponents.pdb",
-        "name": "NorthWind.RazorComponents.vrlhfxp56t.pdb",
-        "hash": "sha256-e+tF/SgcVVFuqJmMcHNi7ihbOKv9feB3Q5oBfJhYwAc=",
+        "name": "NorthWind.RazorComponents.9ph68t60bc.pdb",
+        "hash": "sha256-42REQwmBgUOxYNI/ChDtJZSHAkvPXXfbR+9864Caz5Q=",
         "cache": "force-cache"
       },
       {
@@ -1394,8 +1394,8 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "NorthWind.Sales.Frontend.Views.pdb",
-        "name": "NorthWind.Sales.Frontend.Views.1x39a09pyf.pdb",
-        "hash": "sha256-62mvxqb7AGzKnnkX1kcf/kB8dueUdfHBKDy1dGV6wfI=",
+        "name": "NorthWind.Sales.Frontend.Views.ajoul0fuzs.pdb",
+        "hash": "sha256-tnzQLa46LpdvZIAWVIzVdqIlWlPA5Q1fQib0neYtqjQ=",
         "cache": "force-cache"
       },
       {
@@ -1424,8 +1424,8 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "NorthWind.Sales.BlazorClient.pdb",
-        "name": "NorthWind.Sales.BlazorClient.psp03znz3m.pdb",
-        "hash": "sha256-mQH6vUhKB6MEpO4dlGHfI6yXdOrl6Btdp8A8Xy+cOp4=",
+        "name": "NorthWind.Sales.BlazorClient.of8piipegc.pdb",
+        "hash": "sha256-DB9xuEk0p/jAYBw+ouhyY4QOrb9es/Wf+lcTnHOD0TA=",
         "cache": "force-cache"
       }
     ],
